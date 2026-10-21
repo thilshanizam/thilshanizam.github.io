@@ -4,6 +4,9 @@ import { initializeApp } from
 import { getAuth } from
   "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
 
+import { getFirestore } from
+  "https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDHTzmjJ4XZLq6L2DgWb2w9-aKZhs03wBU",
   authDomain: "political-life-game.firebaseapp.com",
@@ -19,5 +22,7 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication
 const auth = getAuth(app);
 
+const db = getFirestore(app);
+
 // Make authentication available to other JS files
-export { app, auth };
+export { app, auth, db };
