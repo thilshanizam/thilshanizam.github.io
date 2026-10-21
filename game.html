@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Political Life | Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>POLITICAL LIFE</h1>
+        <h2>Republic of Valoria</h2>
+
+        <h3>Welcome to Your Political Journey</h3>
+
+        <p id="playerStatus">
+            Checking player account...
+        </p>
+
+        <section id="gameContent" hidden>
+            <h2>Create Your Character</h2>
+
+            <label for="characterName">
+                Character Name
+            </label>
+
+            <input
+                type="text"
+                id="characterName"
+                placeholder="Enter character name"
+                maxlength="40"
+            >
+
+            <p>
+                Starting Age: 22 years
+            </p>
+
+            <p>
+                Career: Ordinary Citizen
+            </p>
+
+            <button id="createCharacterBtn">
+                Create Character
+            </button>
+
+            <p id="characterMessage"></p>
+        </section>
+
+        <p>
+            <a href="index.html">Back to Home</a>
+        </p>
+    </main>
+
+    <script type="module" src="js/game.js"></script>
+
+</body>
+</html>
